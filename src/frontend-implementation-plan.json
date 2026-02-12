@@ -1,0 +1,64 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Single-page console-themed headline + code entry",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Render the exact headline text prominently at the top/center of the single-page view.",
+      "acceptanceCriteria": [
+        "On initial load, the page shows the exact headline text: \"Bytes console winning!\"",
+        "The headline is visually dominant (large font size and strong emphasis) and clearly readable on desktop and mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Create the single-page App view and render the exact headline text \"Bytes console winning!\" centered near the top with very large, prominent typography."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Add a labeled code entry input directly beneath the headline with local state updates.",
+      "acceptanceCriteria": [
+        "A text input is visible beneath the headline",
+        "The input has an English label or placeholder indicating it is for entering a code (e.g., \"Enter code\")",
+        "Typing in the input updates the local UI state without errors"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add a labeled code entry UI directly beneath the headline using shadcn-ui form primitives (e.g., Label and Input) and manage the input value in React local state. Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Apply a cohesive minimal “console/bytes” visual theme across the page (background, colors, typography, spacing) without a blue/purple primary look.",
+      "acceptanceCriteria": [
+        "The page uses a consistent, intentional theme (not default browser styling)",
+        "The theme avoids a blue/purple primary look unless explicitly requested later",
+        "Layout remains clean and centered with sensible spacing on common viewport sizes"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Create global styles/theme tokens (CSS variables used by Tailwind/shadcn) and base element styling to establish a minimal console/bytes look (dark/neutral background, high-contrast foreground, consistent spacing/typography) and ensure the page is centered and responsive."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Adjust Tailwind theme extensions if needed to support the console/bytes styling (e.g., font family choices or additional neutral accent colors) while keeping the overall palette away from blue/purple."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Apply layout and Tailwind utility classes to keep the headline and code input consistently themed, centered, and spaced appropriately across viewport sizes."
+        }
+      ]
+    }
+  ]
+}

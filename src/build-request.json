@@ -1,0 +1,70 @@
+{
+  "kind": "build_request",
+  "title": "Single-page site with big headline and code entry box",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a single-page frontend view that displays the exact text \"Bytes console winning!\" in very large, prominent letters at the top/center of the page.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "make a website that  says Bytes console winning! In BIG letters."
+        ]
+      },
+      "acceptanceCriteria": [
+        "On initial load, the page shows the exact headline text: \"Bytes console winning!\"",
+        "The headline is visually dominant (large font size and strong emphasis) and clearly readable on desktop and mobile"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Add a code entry UI directly beneath the headline: a labeled input box where the user can enter a code.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Then put a box where you can enter a code."
+        ]
+      },
+      "acceptanceCriteria": [
+        "A text input is visible beneath the headline",
+        "The input has an English label or placeholder indicating it is for entering a code (e.g., \"Enter code\")",
+        "Typing in the input updates the local UI state without errors"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Apply a coherent visual theme across the page (colors, typography, spacing, and background) suitable for a minimal “console/bytes” style, and keep it consistent for the headline and code input.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The page uses a consistent, intentional theme (not default browser styling)",
+        "The theme avoids a blue/purple primary look unless explicitly requested later",
+        "Layout remains clean and centered with sensible spacing on common viewport sizes"
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend must not modify files under frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, or anything in frontend/src/components/ui (compose these components instead if needed).",
+    "Backend changes are not required for this request; do not add unnecessary backend features."
+  ],
+  "nonGoals": [
+    "No authentication (Internet Identity)",
+    "No code submission, verification, or backend persistence for the entered code unless requested later",
+    "No additional pages, routing, or dashboards"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

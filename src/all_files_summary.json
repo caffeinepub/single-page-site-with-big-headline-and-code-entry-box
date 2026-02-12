@@ -1,0 +1,14 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no methods or logic.",
+  "feature_evidence.json": "Feature evidence report mapping three UI/theme features to involved files and components.",
+  "frontend-file-summaries.txt": "Short descriptions of key frontend files including App.tsx, index.css, and Tailwind config.",
+  "frontend/index.css": "Tailwind base layer overrides defining extensive OKLCH color variables for light/dark modes.",
+  "frontend/index.html": "HTML entry point that sets up root element and loads the React main.tsx script.",
+  "frontend/src/App.tsx": "React component showing the large multi-line headline and a labeled code input with footer attribution.",
+  "frontend/src/hooks/useActor.ts": "Hook that creates and refreshes a backend actor using react-query based on identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Internet Identity auth context and provider handling login, stored identity, and state transitions.",
+  "frontend/src/index.css": "Global styles establishing terminal‑green OKLCH theme plus smoothing and font settings.",
+  "frontend/src/main.tsx": "React entry file setting up providers and rendering App with Tailwind styles.",
+  "frontend/tailwind.config.js": "Tailwind config extending theme colors, fonts, radii, and animations using OKLCH variables.",
+  "project_state.json": "Metadata describing project state, existing features, and pending feature request AR‑1."
+}
