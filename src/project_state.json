@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 3,
+  "projectStateVersion": 5,
   "summary": "Simple single-page website displaying 'Bytes console winning!' in large text with a code entry input box.",
   "architectural_notes": [],
   "known_issues": [],
@@ -29,12 +29,26 @@
         "REQ-3"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-update-the-app-s-visual-color-palette-to-an-electric-technology-theme-neon-tech-aesthetic-while-keeping-the-existing-layout-and-the-exact-headline-text-and-code-entry-ui-unchanged",
+      "title": "Update the app’s visual color palette to an “electric / technology” theme (neon-tech aesthetic) while keeping the existing layout and the exact headline text and code-entry UI unchanged.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
     {
       "id": "AR-1",
       "summary": "Create a simple webpage that shows 'Bytes console winning!' in BIG letters and includes an input box to enter a code.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Update the page color scheme to an 'electric' / technology-themed palette (tech-style colors).",
       "reqIds": [],
       "status": "pending"
     }

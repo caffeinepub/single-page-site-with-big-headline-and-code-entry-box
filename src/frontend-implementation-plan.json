@@ -1,62 +1,27 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Single-page console-themed headline + code entry",
+  "title": "Electric/technology neon palette refresh (no layout or copy changes)",
   "requirements": [
     {
-      "id": "REQ-1",
-      "summary": "Render the exact headline text prominently at the top/center of the single-page view.",
+      "id": "REQ-4",
+      "summary": "Apply a cohesive electric/technology neon palette via theme tokens while keeping the existing layout, headline text, and code-entry UI structure unchanged.",
       "acceptanceCriteria": [
-        "On initial load, the page shows the exact headline text: \"Bytes console winning!\"",
-        "The headline is visually dominant (large font size and strong emphasis) and clearly readable on desktop and mobile"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "create",
-          "description": "Create the single-page App view and render the exact headline text \"Bytes console winning!\" centered near the top with very large, prominent typography."
-        }
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "summary": "Add a labeled code entry input directly beneath the headline with local state updates.",
-      "acceptanceCriteria": [
-        "A text input is visible beneath the headline",
-        "The input has an English label or placeholder indicating it is for entering a code (e.g., \"Enter code\")",
-        "Typing in the input updates the local UI state without errors"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Add a labeled code entry UI directly beneath the headline using shadcn-ui form primitives (e.g., Label and Input) and manage the input value in React local state. Verify the component's usage instructions before implementing."
-        }
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "summary": "Apply a cohesive minimal “console/bytes” visual theme across the page (background, colors, typography, spacing) without a blue/purple primary look.",
-      "acceptanceCriteria": [
-        "The page uses a consistent, intentional theme (not default browser styling)",
-        "The theme avoids a blue/purple primary look unless explicitly requested later",
-        "Layout remains clean and centered with sensible spacing on common viewport sizes"
+        "The page uses a cohesive electric/tech palette (e.g., dark base with bright neon accents such as cyan/teal/magenta) applied consistently across background, text, borders, and focus states.",
+        "The headline still displays the exact text “Bytes console winning!” with distinct emphasis per line, but with updated electric/tech colors (e.g., primary and accent feel neon/tech).",
+        "The code input’s border and focus ring clearly reflect the updated electric/tech accent color(s) and remain accessible with sufficient contrast against the background.",
+        "No changes are made to user-facing copy (e.g., “Enter Code”, placeholder text, footer text) other than color/styling."
       ],
       "file_operations": [
         {
           "path": "frontend/src/index.css",
-          "operation": "create",
-          "description": "Create global styles/theme tokens (CSS variables used by Tailwind/shadcn) and base element styling to establish a minimal console/bytes look (dark/neutral background, high-contrast foreground, consistent spacing/typography) and ensure the page is centered and responsive."
+          "operation": "modify",
+          "description": "Update the existing CSS variable theme tokens (background/foreground/primary/accent/border/input/ring, etc.) to an electric/technology neon palette (dark base + neon cyan/teal/magenta accents), ensuring sufficient contrast and that focus/hover states remain clear for the shadcn-ui Input/Label styling. Verify the component's usage instructions before implementing."
         },
         {
-          "path": "frontend/tailwind.config.js",
+          "path": "frontend/index.html",
           "operation": "modify",
-          "description": "Adjust Tailwind theme extensions if needed to support the console/bytes styling (e.g., font family choices or additional neutral accent colors) while keeping the overall palette away from blue/purple."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Apply layout and Tailwind utility classes to keep the headline and code input consistently themed, centered, and spaced appropriately across viewport sizes."
+          "description": "Set the default document theme to the neon-tech dark presentation (e.g., by applying the existing Tailwind dark-mode class at the document level) without changing layout or any user-facing copy."
         }
       ]
     }

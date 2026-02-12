@@ -2,10 +2,11 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-create-a-single-page-frontend-view-that-displays-the-exact-text-bytes-console-winning-in-very-large-prominent-letters-at-the-top-center-of-the-page",
-      "featureTitle": "Create a single-page frontend view that displays the exact text \"Bytes console winning!\" in very large, prominent letters at the top/center of the page.",
+      "featureId": "feature-update-the-app-s-visual-color-palette-to-an-electric-technology-theme-neon-tech-aesthetic-while-keeping-the-existing-layout-and-the-exact-headline-text-and-code-entry-ui-unchanged",
+      "featureTitle": "Update the app’s visual color palette to an “electric / technology” theme (neon-tech aesthetic) while keeping the existing layout and the exact headline text and code-entry UI unchanged.",
       "files": [
-        "frontend/src/App.tsx"
+        "frontend/index.html",
+        "frontend/src/index.css"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -15,45 +16,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-1"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-a-code-entry-ui-directly-beneath-the-headline-a-labeled-input-box-where-the-user-can-enter-a-code",
-      "featureTitle": "Add a code entry UI directly beneath the headline: a labeled input box where the user can enter a code.",
-      "files": [
-        "frontend/src/App.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-2"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-apply-a-coherent-visual-theme-across-the-page-colors-typography-spacing-and-background-suitable-for-a-minimal-console-bytes-style-and-keep-it-consistent-for-the-headline-and-code-input",
-      "featureTitle": "Apply a coherent visual theme across the page (colors, typography, spacing, and background) suitable for a minimal “console/bytes” style, and keep it consistent for the headline and code input.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/index.css",
-        "frontend/tailwind.config.js"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-3"
+        "REQ-4"
       ],
       "confidence": "high"
     }

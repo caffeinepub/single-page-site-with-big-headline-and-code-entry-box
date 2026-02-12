@@ -5,59 +5,59 @@
 @layer base {
     :root {
         --radius: 0.25rem;
-        /* Light mode - Clean terminal green theme */
-        --background: 0.98 0.01 150;
-        --foreground: 0.20 0.02 150;
-        --card: 0.96 0.01 150;
-        --card-foreground: 0.20 0.02 150;
-        --popover: 0.98 0.01 150;
-        --popover-foreground: 0.20 0.02 150;
-        --primary: 0.45 0.15 165;
-        --primary-foreground: 0.98 0.01 150;
-        --secondary: 0.92 0.02 150;
-        --secondary-foreground: 0.20 0.02 150;
-        --muted: 0.94 0.01 150;
-        --muted-foreground: 0.50 0.02 150;
-        --accent: 0.55 0.18 145;
-        --accent-foreground: 0.98 0.01 150;
+        /* Light mode - Electric tech theme with bright accents */
+        --background: 0.98 0.01 240;
+        --foreground: 0.15 0.03 240;
+        --card: 0.96 0.01 240;
+        --card-foreground: 0.15 0.03 240;
+        --popover: 0.98 0.01 240;
+        --popover-foreground: 0.15 0.03 240;
+        --primary: 0.60 0.25 195;
+        --primary-foreground: 0.98 0.01 240;
+        --secondary: 0.92 0.02 240;
+        --secondary-foreground: 0.15 0.03 240;
+        --muted: 0.94 0.01 240;
+        --muted-foreground: 0.50 0.03 240;
+        --accent: 0.65 0.28 330;
+        --accent-foreground: 0.98 0.01 240;
         --destructive: 0.55 0.22 25;
-        --destructive-foreground: 0.98 0.01 150;
-        --border: 0.85 0.02 150;
-        --input: 0.85 0.02 150;
-        --ring: 0.55 0.18 145;
-        --chart-1: 0.55 0.18 145;
-        --chart-2: 0.45 0.15 165;
-        --chart-3: 0.65 0.12 180;
-        --chart-4: 0.50 0.20 130;
-        --chart-5: 0.60 0.15 155;
+        --destructive-foreground: 0.98 0.01 240;
+        --border: 0.85 0.03 240;
+        --input: 0.85 0.03 240;
+        --ring: 0.65 0.28 195;
+        --chart-1: 0.60 0.25 195;
+        --chart-2: 0.65 0.28 330;
+        --chart-3: 0.70 0.22 280;
+        --chart-4: 0.55 0.20 210;
+        --chart-5: 0.62 0.24 170;
     }
 
     .dark {
-        /* Dark mode - Terminal/console aesthetic with green accents */
-        --background: 0.12 0.02 150;
-        --foreground: 0.92 0.02 150;
-        --card: 0.16 0.02 150;
-        --card-foreground: 0.92 0.02 150;
-        --popover: 0.14 0.02 150;
-        --popover-foreground: 0.92 0.02 150;
-        --primary: 0.65 0.20 145;
-        --primary-foreground: 0.12 0.02 150;
-        --secondary: 0.20 0.02 150;
-        --secondary-foreground: 0.92 0.02 150;
-        --muted: 0.22 0.02 150;
-        --muted-foreground: 0.60 0.03 150;
-        --accent: 0.70 0.22 140;
-        --accent-foreground: 0.12 0.02 150;
+        /* Dark mode - Electric neon tech aesthetic with cyan/magenta */
+        --background: 0.08 0.03 240;
+        --foreground: 0.95 0.02 240;
+        --card: 0.12 0.03 240;
+        --card-foreground: 0.95 0.02 240;
+        --popover: 0.10 0.03 240;
+        --popover-foreground: 0.95 0.02 240;
+        --primary: 0.75 0.28 195;
+        --primary-foreground: 0.08 0.03 240;
+        --secondary: 0.18 0.03 240;
+        --secondary-foreground: 0.95 0.02 240;
+        --muted: 0.20 0.03 240;
+        --muted-foreground: 0.65 0.04 240;
+        --accent: 0.70 0.30 330;
+        --accent-foreground: 0.08 0.03 240;
         --destructive: 0.60 0.24 25;
-        --destructive-foreground: 0.92 0.02 150;
-        --border: 0.28 0.03 150;
-        --input: 0.28 0.03 150;
-        --ring: 0.70 0.22 140;
-        --chart-1: 0.70 0.22 140;
-        --chart-2: 0.65 0.20 145;
-        --chart-3: 0.60 0.18 155;
-        --chart-4: 0.75 0.24 135;
-        --chart-5: 0.55 0.16 160;
+        --destructive-foreground: 0.95 0.02 240;
+        --border: 0.25 0.05 240;
+        --input: 0.25 0.05 240;
+        --ring: 0.75 0.28 195;
+        --chart-1: 0.75 0.28 195;
+        --chart-2: 0.70 0.30 330;
+        --chart-3: 0.72 0.26 280;
+        --chart-4: 0.68 0.24 210;
+        --chart-5: 0.78 0.25 170;
     }
 
     * {

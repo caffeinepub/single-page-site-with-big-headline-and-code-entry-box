@@ -1,5 +1,6 @@
 {
   "frontend/src/App.tsx": "Main application component displaying \"Bytes console winning!\" headline in large multi-colored text with a code entry input field below, plus footer with attribution.",
-  "frontend/src/index.css": "Global styles with OKLCH color system defining a terminal/console green theme for both light and dark modes, avoiding blue/purple aesthetics.",
-  "frontend/tailwind.config.js": "Tailwind configuration with extended theme including monospace font family for console aesthetic and minimal border radius."
+  "frontend/src/index.css": "Global styles with OKLCH color system defining an electric/technology neon theme with dark base and bright cyan/magenta accents for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration with extended theme including monospace font family for console aesthetic and minimal border radius.",
+  "frontend/index.html": "HTML entry point with dark mode enabled by default to showcase the electric neon tech aesthetic."
 }

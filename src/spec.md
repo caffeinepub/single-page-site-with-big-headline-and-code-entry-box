@@ -1,11 +1,12 @@
 # Specification
 
 ## Summary
-**Goal:** Create a single-page view with a very large headline reading “Bytes console winning!” and a code entry input beneath it, styled with a minimal console/bytes theme.
+**Goal:** Update the app’s visual styling to a cohesive electric/technology (neon-tech) color palette while keeping the current layout and all text and UI structure unchanged.
 
 **Planned changes:**
-- Add a centered, visually dominant headline displaying the exact text: "Bytes console winning!"
-- Add a labeled/placeholder text input directly beneath the headline for entering a code, with local state updates on typing
-- Apply a consistent, intentional “console/bytes” visual theme (typography, spacing, background, colors) that avoids a blue/purple primary look
+- Apply an electric/tech palette (dark base with neon accents such as cyan/teal/magenta) consistently across the page background, text, and UI surfaces.
+- Update headline styling colors while keeping the exact headline text “Bytes console winning!” and its per-line emphasis unchanged.
+- Adjust the code entry input’s border, focus ring, and related states to use the new neon accent color(s) with sufficient contrast and accessibility.
+- Ensure no user-facing copy changes occur; only color/styling updates are made.
 
-**User-visible outcome:** On load, users see the large “Bytes console winning!” headline and can type into a clearly labeled code input on a clean, centered, themed single-page layout.
+**User-visible outcome:** The app looks “electric/tech” themed with neon accents throughout, while the headline text and code-entry UI behave and read exactly the same as before.

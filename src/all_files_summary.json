@@ -1,14 +1,14 @@
 {
-  "backend/main.mo": "Empty Motoko actor with no methods or logic.",
-  "feature_evidence.json": "Feature evidence report mapping three UI/theme features to involved files and components.",
-  "frontend-file-summaries.txt": "Short descriptions of key frontend files including App.tsx, index.css, and Tailwind config.",
-  "frontend/index.css": "Tailwind base layer overrides defining extensive OKLCH color variables for light/dark modes.",
-  "frontend/index.html": "HTML entry point that sets up root element and loads the React main.tsx script.",
-  "frontend/src/App.tsx": "React component showing the large multi-line headline and a labeled code input with footer attribution.",
-  "frontend/src/hooks/useActor.ts": "Hook that creates and refreshes a backend actor using react-query based on identity changes.",
-  "frontend/src/hooks/useInternetIdentity.ts": "Internet Identity auth context and provider handling login, stored identity, and state transitions.",
-  "frontend/src/index.css": "Global styles establishing terminal‑green OKLCH theme plus smoothing and font settings.",
-  "frontend/src/main.tsx": "React entry file setting up providers and rendering App with Tailwind styles.",
-  "frontend/tailwind.config.js": "Tailwind config extending theme colors, fonts, radii, and animations using OKLCH variables.",
-  "project_state.json": "Metadata describing project state, existing features, and pending feature request AR‑1."
+  "backend/main.mo": "Minimal Motoko actor with no methods defined.",
+  "feature_evidence.json": "Feature evidence report linking the neon-tech theme update to specific frontend files.",
+  "frontend-file-summaries.txt": "Provides short summaries of key frontend files and their roles in the neon-tech themed UI.",
+  "frontend/index.css": "Tailwind base and theme variable definitions for the electric/neon tech color palette in light and dark modes.",
+  "frontend/index.html": "HTML entry point enabling dark mode and loading the React app root.",
+  "frontend/src/App.tsx": "Main React component rendering the large 'Bytes console winning!' headline and a styled code input box with footer.",
+  "frontend/src/hooks/useActor.ts": "Hook that creates and manages a backend actor based on the current Internet Identity state.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Internet Identity provider and hook managing authentication, identity loading, and login state.",
+  "frontend/src/index.css": "Global Tailwind-based styling defining electric neon color variables and smoothing settings.",
+  "frontend/src/main.tsx": "App bootstrap mounting React with query client and Internet Identity provider.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending colors, fonts, radii, and animations using OKLCH theme variables.",
+  "project_state.json": "Project metadata describing implemented features, theme update, and pending feature requests."
 }
